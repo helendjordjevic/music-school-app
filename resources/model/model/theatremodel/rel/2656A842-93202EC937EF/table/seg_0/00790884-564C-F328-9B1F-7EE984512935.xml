@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00790884-564C-F328-9B1F-7EE984512935" name="Assignment">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>DF4EE594-A798-E238-24D6-80F428F6C547</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="honorar" id="0404EA14-1DBA-F942-7AD3-7278B8D2C334">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>FE8CD1D9-97ED-9706-28EB-918C253987F3</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="startdate" id="C9AEF470-050E-0841-D81F-C1BC746DCE76">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>807DA3D9-245D-C304-CDF0-26EDE18019CE</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="enddate" id="37F2D2E0-E267-B7B5-178C-955030D2167A">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>CF4C779E-863F-A606-13B5-5BADBA4E77B4</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Actor_ida" id="FEE3111B-C75F-4031-FF05-A39DE5644FA5">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>DEBAC112-7D94-0421-DAFD-9BF6F69096DD</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4386A154-EE70-CE1D-192F-1BD56B4DE3FB" referredColumn="5752B997-1D52-672A-639F-FAD7BA5E30C6"/>
+</associations>
+</Column>
+<Column name="Part_idpart" id="2FC3AF8F-772E-C95C-04DD-8B68AD1B5669">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>C30268B0-A608-2287-E78F-C8C6C3E2C526</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="249EC69D-E8B2-FA88-AAAA-9110BE25BDF9" referredColumn="8983AB20-7700-C78B-2F93-9BD0A8A0D30A"/>
+</associations>
+</Column>
+<Column name="idassignment" id="083CE634-430D-5B37-E4F3-2DEE1E3114C2">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>4C224A02-3D5D-4CFA-72E8-9C7056A42DB2</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0335EFCB-20AF-8B15-390F-F1D245BCBD26" name="Assignment_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>DFE20EBD-FF99-4083-C8F9-06AEA32DCE75</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="083CE634-430D-5B37-E4F3-2DEE1E3114C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BE4F71B-C04A-1D51-8392-6136586D76DE" name="Assignment_Actor_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>C270537C-89F8-94B0-EC00-56282B8DB163</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEE3111B-C75F-4031-FF05-A39DE5644FA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04D3ED01-F6EC-2D99-97F6-2AE3D73D9E7F" name="Assignment_Part_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>1165DE95-7BA6-2358-E975-B2D0E9B5BC10</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FC3AF8F-772E-C95C-04DD-8B68AD1B5669"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

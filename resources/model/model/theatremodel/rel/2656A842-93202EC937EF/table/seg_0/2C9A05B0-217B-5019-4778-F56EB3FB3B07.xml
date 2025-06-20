@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C9A05B0-217B-5019-4778-F56EB3FB3B07" name="Technician">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>92997BD7-9577-B4D6-2A82-67395F7D28DF</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sin" id="C7FCD156-031C-502E-F860-F7992ADBC7AC">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>B3CEE31D-9996-E936-ACBA-F52F9C4A5599</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6619F38E-3062-4DEC-A4E6-99B180676631" referredColumn="95648588-C33E-2940-050A-24E91B8F1F83"/>
+</associations>
+</Column>
+<Column name="aptype" id="C5435B4E-BF5B-A65D-CB03-C36A3118E3BC">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>34FAF0A5-672C-5ECC-706A-49E34433EB01</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7F94E14-3120-6D66-45E3-4D12CEEE67CE" name="Technician_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>4560AFEA-D4AA-B1C5-D292-3E649D002971</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7FCD156-031C-502E-F860-F7992ADBC7AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02DF3D87-C123-F3AE-1342-8CB853B076D0" name="Technician_Employee_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>57C063A6-2226-78E7-F960-9438018FA64D</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7FCD156-031C-502E-F860-F7992ADBC7AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

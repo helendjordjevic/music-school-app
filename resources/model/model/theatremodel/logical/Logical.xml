@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="802A4CDC-641F-B2E3-2515-8F1E64DC747C" mainViewID="1A71B9A0-E5E2-22A2-4E36-F2302D05FC8A">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:28:33 UTC</createdTime>
+<ownerDesignName>pozoriste</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

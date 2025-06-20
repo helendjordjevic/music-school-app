@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CD32D0D-DDB5-F3AC-48FA-4D5CB220410C" name="Employee">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>2192F86E-AA82-90E8-98BA-9CE3A9238393</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_em" id="D6A57C8C-35DF-56F0-7E45-37C5A5A994F3">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>B3CEE31D-9996-E936-ACBA-F52F9C4A5599</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_em" id="BA57A102-E731-559F-30F9-01DD94AB560C">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>1897D3A5-3921-9045-55FC-65E2E8AAEEB7</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname_em" id="EE03DA61-9BF0-68D3-AD5E-C1BA841DDBCE">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>17729ED3-89CD-2325-EA17-712526968D58</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salary_em" id="B4454FDA-42ED-0562-82F9-98412C003E64">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>7C5F0689-926C-CF38-F351-B3B4D9436019</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type_em" id="670B32DE-841E-28C4-01B5-5C9D9EF73DF5">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>9885A6CE-4535-1A3F-3B3A-C034F17CC871</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_id_dpt" id="9FCDA703-3050-CAAA-D663-489E291D48B3">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>1F6B948D-28A2-3CFA-2C04-4112250E8C74</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="836C6691-F376-739D-4F33-A436045DABA0" referredColumn="B9F98759-B08D-2CF9-7799-E413443032FE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58F44735-00DA-D533-ADCA-47548F3A758E" name="Employee_PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>4560AFEA-D4AA-B1C5-D292-3E649D002971</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6A57C8C-35DF-56F0-7E45-37C5A5A994F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="304B1C74-8781-B5D7-DA68-22B0BDC3BFA1" name="Employee_Department_FK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>834F9D1B-E9B8-6389-3892-3D7CA81D2E04</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FCDA703-3050-CAAA-D663-489E291D48B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="has_showing_on" directorySegmentName="seg_0" id="AE07DBED-C9D5-3E00-2D50-7F4D67C0B76C">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:45:27 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="2656A842-751A-2412-219B-93202EC937EF" value="true"/>
+</engineerTo>
+<targetPk>1A2EF8DD-CD5D-6722-E66A-AFD8B7D6C50F</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A50814D6-6536-A662-F5FC-7E11500B552E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9B5CA18C-7599-0534-C0E7-EB8606A8BFFC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

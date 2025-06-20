@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF2CF313-045A-B5B9-3023-62899C40D7E5" name="Play">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>24F04CB7-5E9E-4997-6878-50E835D8CDC1</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pl" id="7EB58A02-30DD-5D8B-36E2-8406C8F72508">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>965A2276-381F-5028-3D48-9C71AB33210B</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_pl" id="A84FF126-BAB4-D6CD-9982-F05BAA29FCB0">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>EBF52149-900A-A0C4-5738-FE14EEB42B1C</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duration_pl" id="6EA18A04-E986-56B8-2AF0-890FD3E39531">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>223FB8D4-C914-E8E2-8D4F-E43166B35366</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year_pl" id="03901E13-17E8-B04B-B1F5-9386728E0D51">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>F58539E3-85F0-569A-AC63-0B70A5CAD7A5</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="951A3230-00BE-3B91-B427-CC8D302F62A5" name="Play_PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>D0E30D65-3E24-D78A-4629-2AC88A4E5F9D</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EB58A02-30DD-5D8B-36E2-8406C8F72508"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

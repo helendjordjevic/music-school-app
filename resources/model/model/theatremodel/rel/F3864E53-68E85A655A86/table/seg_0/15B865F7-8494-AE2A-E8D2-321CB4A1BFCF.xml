@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15B865F7-8494-AE2A-E8D2-321CB4A1BFCF" name="Scene">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>9B5CA18C-7599-0534-C0E7-EB8606A8BFFC</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sc" id="F77F6D12-E26F-4B23-239D-13E755CC70BA">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>E11BC6D1-2C46-5A41-3942-506431D7494A</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_sc" id="52270720-3CFD-A1A6-C8C9-B65627D9C124">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>CF7D45A8-E8C8-EECE-8C59-394DF1BF9411</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numofseats_sc" id="564612C6-4CF4-7C28-4534-83818E118991">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>5209B4BD-50B7-A37D-EDD0-C7D26DA9DDC2</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Theatre_id_th" id="D4359E5B-7123-C355-1FED-78807E267C22">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>32AC2C34-B584-6A2C-BAE1-A9EA2671204B</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7FBC24D-7ED5-1761-BB50-29E86BA04CD6" referredColumn="636B23C1-6116-D71A-1FB0-A1457A986FD8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4593E536-18FE-1D62-1305-E10A44A800CC" name="Scene_PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>1A2EF8DD-CD5D-6722-E66A-AFD8B7D6C50F</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F77F6D12-E26F-4B23-239D-13E755CC70BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D8C3E07-3F3F-6AA3-7ACA-4594D29FC242" name="Scene_Theatre_FK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>DA383414-694E-4786-8A49-3B1E7F279061</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4359E5B-7123-C355-1FED-78807E267C22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

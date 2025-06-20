@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF4EE594-A798-E238-24D6-80F428F6C547" name="Assignment">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:42:04 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_as" id="4C224A02-3D5D-4CFA-72E8-9C7056A42DB2">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:13:51 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="honorar_as" id="FE8CD1D9-97ED-9706-28EB-918C253987F3">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:42:13 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="startdate_as" id="807DA3D9-245D-C304-CDF0-26EDE18019CE">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:42:13 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="enddate_as" id="CF4C779E-863F-A606-13B5-5BADBA4E77B4">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:42:13 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ac" id="DEBAC112-7D94-0421-DAFD-9BF6F69096DD">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:44:12 UTC</createdTime>
+<generatorID>C270537C-89F8-94B0-EC00-56282B8DB163</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referedAttribute>C897688C-B958-6697-A60D-70605E0BA457</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pt" id="C30268B0-A608-2287-E78F-C8C6C3E2C526">
+<createdBy>Marija Kukic</createdBy>
+<createdTime>2019-12-04 12:26:07 UTC</createdTime>
+<generatorID>1165DE95-7BA6-2358-E975-B2D0E9B5BC10</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referedAttribute>46A6E0D5-7144-55A4-B855-C4F6242E9277</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFE20EBD-FF99-4083-C8F9-06AEA32DCE75" name="Assignment PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:43:07 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>4C224A02-3D5D-4CFA-72E8-9C7056A42DB2</newElementsIDs>
+<usedAttributes>
+<attributeRef>4C224A02-3D5D-4CFA-72E8-9C7056A42DB2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

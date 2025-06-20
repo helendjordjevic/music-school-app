@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03C51498-03C9-065F-F9E1-C2D01B96413D" name="Showing">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>A50814D6-6536-A662-F5FC-7E11500B552E</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ordnum" id="8E6A3875-FD45-AB29-EF52-1C0D74E9A67B">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>9F95B782-F5FE-12A4-12E2-DA41EB339517</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dateofplay" id="A125E1E4-1A04-B30B-CFB3-7ED4649EC22C">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>70F63F65-0403-55E7-9C1D-87AFAF8DFDD8</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="timeofplay" id="C258B4B7-6AA2-17DD-16B4-991F7EEC8404">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>CF70C33C-D723-CEA4-54C0-687BC6A989EE</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numofspecs" id="E7605A01-FC5F-6F27-9CC0-3EB578361E31">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>74DCEBC9-DAA8-29F6-5E8F-0C0597DD929E</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Play_idplay" id="C06A7347-5667-3C4B-3637-B74A47AF81D8">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>942B1CEF-E259-E172-EE11-BEFD2FC1EA5B</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5436AE80-EA0D-CD94-7362-6383D7D040EB" referredColumn="3FDC2A1F-345A-5FFA-C5C6-FFA62BD04754"/>
+</associations>
+</Column>
+<Column name="Scene_idscene" id="204C9330-21D4-2305-9F21-AA7B06A3304D">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>1BE9CC60-0569-57D5-F1B1-A81E56468682</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D543E7B9-A602-9C68-DBEA-FA4C77364731" referredColumn="B8F26DA9-DDC3-71BA-5360-7138E89D8EC1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85B45FDB-55A9-A030-5E6F-114E735A3B59" name="Showing_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>E2CE6C97-050C-AA6C-F15B-0D1CD4FBFAEF</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E6A3875-FD45-AB29-EF52-1C0D74E9A67B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18E90524-9A83-8ED6-9D2F-BAE85B3B2D01" name="Showing_Play_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>53D0A686-9E7F-2C79-552D-161E95928818</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C06A7347-5667-3C4B-3637-B74A47AF81D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B8C0821-467D-3788-C18C-9E9C640DDD50" name="Showing_Scene_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>AE07DBED-C9D5-3E00-2D50-7F4D67C0B76C</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="204C9330-21D4-2305-9F21-AA7B06A3304D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

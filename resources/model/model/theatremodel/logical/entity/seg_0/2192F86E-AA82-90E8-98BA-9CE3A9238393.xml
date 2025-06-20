@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2192F86E-AA82-90E8-98BA-9CE3A9238393" name="Employee">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:57:16 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorAttributeID>9885A6CE-4535-1A3F-3B3A-C034F17CC871</discriminatorAttributeID>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_em" id="B3CEE31D-9996-E936-ACBA-F52F9C4A5599">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:57:22 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_em" id="1897D3A5-3921-9045-55FC-65E2E8AAEEB7">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:57:22 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="surname_em" id="17729ED3-89CD-2325-EA17-712526968D58">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:57:23 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary_em" id="7C5F0689-926C-CF38-F351-B3B4D9436019">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:57:23 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type_em" id="9885A6CE-4535-1A3F-3B3A-C034F17CC871">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 22:01:00 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_dpt" id="1F6B948D-28A2-3CFA-2C04-4112250E8C74">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:58:53 UTC</createdTime>
+<generatorID>834F9D1B-E9B8-6389-3892-3D7CA81D2E04</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="true"/>
+</engineerTo>
+<referedAttribute>29120945-56D9-CF6A-EC72-38187551DA37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4560AFEA-D4AA-B1C5-D292-3E649D002971" name="Employee PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:57:31 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F3864E53-574B-53A5-B19B-68E85A655A86" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>B3CEE31D-9996-E936-ACBA-F52F9C4A5599</newElementsIDs>
+<usedAttributes>
+<attributeRef>B3CEE31D-9996-E936-ACBA-F52F9C4A5599</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

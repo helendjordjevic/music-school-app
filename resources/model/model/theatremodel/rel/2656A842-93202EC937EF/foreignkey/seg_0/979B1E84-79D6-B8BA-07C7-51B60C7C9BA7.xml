@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="979B1E84-79D6-B8BA-07C7-51B60C7C9BA7" containerWithKeyObject="EF978A4E-A5FD-DEE8-5B1D-DC757C46C152" localFKIndex="5FCBDCF4-B404-558A-0F0A-BCB6E846A9AE" name="TheatreManager_Employee_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>D032F22B-C47C-6693-3BF4-02384FF04EA1</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referredTableLongName>Employee</referredTableLongName>
+<arc>621B9FA3-4E80-70B0-AA58-4E78524171FC</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ABCF88D9-305A-280A-E0DB-D020D421F6D7</referredTableID>
+<keyObject>25541BF7-18FD-8798-BA1B-2CE34A73C57C</keyObject>
+<referredKeyID>25541BF7-18FD-8798-BA1B-2CE34A73C57C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>sin</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>TheatreManager</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

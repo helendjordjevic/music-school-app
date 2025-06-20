@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B5CA18C-7599-0534-C0E7-EB8606A8BFFC" name="Scene">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:44:43 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_sc" id="E11BC6D1-2C46-5A41-3942-506431D7494A">
+<createdBy>Marija Kukic</createdBy>
+<createdTime>2019-12-04 12:24:53 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_sc" id="CF7D45A8-E8C8-EECE-8C59-394DF1BF9411">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:44:49 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numofseats_sc" id="5209B4BD-50B7-A37D-EDD0-C7D26DA9DDC2">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:44:49 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_th" id="32AC2C34-B584-6A2C-BAE1-A9EA2671204B">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:48:15 UTC</createdTime>
+<generatorID>DA383414-694E-4786-8A49-3B1E7F279061</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referedAttribute>4AD7254C-5BB3-8F5A-EDAB-89B97C2A6536</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1A2EF8DD-CD5D-6722-E66A-AFD8B7D6C50F" name="Scene PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:45:00 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>E11BC6D1-2C46-5A41-3942-506431D7494A</newElementsIDs>
+<usedAttributes>
+<attributeRef>E11BC6D1-2C46-5A41-3942-506431D7494A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

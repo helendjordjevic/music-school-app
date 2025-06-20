@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28D8B207-6098-400C-851B-21E4D1999FC7" name="Actor">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:02 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_ac" id="C897688C-B958-6697-A60D-70605E0BA457">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:08 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_ac" id="9A6E6C55-5640-0B51-269C-200F0388ADE6">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:08 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dob_ac" id="5BFF370D-6B12-6EF1-3859-6079B8FC9AEE">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:08 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_ac" id="DAD3F317-9006-C519-E252-5FA1FCE9CDC8">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:08 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary_ac" id="6C6C9AFE-1728-5027-C6A8-F1EBCA20A8FC">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:09 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bonus_ac" id="9E3E8E00-D6D3-3C13-5EF3-6BE7B4C16743">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:09 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_th" id="D28984C0-ABA3-CDD6-00ED-F34816EC2CC1">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:55:09 UTC</createdTime>
+<generatorID>C3308450-80EE-A1AC-AB10-7CC108A0F55A</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4AD7254C-5BB3-8F5A-EDAB-89B97C2A6536</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BBDE99D8-91EF-A9C2-00E4-3D4B9EAFF4C3" name="Actor PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:40:19 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>C897688C-B958-6697-A60D-70605E0BA457</newElementsIDs>
+<usedAttributes>
+<attributeRef>C897688C-B958-6697-A60D-70605E0BA457</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

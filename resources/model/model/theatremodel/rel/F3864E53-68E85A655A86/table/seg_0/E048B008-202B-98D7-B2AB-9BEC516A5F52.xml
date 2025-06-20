@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E048B008-202B-98D7-B2AB-9BEC516A5F52" name="Showing">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>A50814D6-6536-A662-F5FC-7E11500B552E</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ordnum_sh" id="2F7B1F05-9C19-1E71-7368-DEF35075614C">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>9F95B782-F5FE-12A4-12E2-DA41EB339517</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_sh" id="BF4A265A-58CE-0B93-0010-70A31F5C3A75">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>70F63F65-0403-55E7-9C1D-87AFAF8DFDD8</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="time_sh" id="97C7CA07-4DA9-64C7-CF49-64165E660D6E">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>CF70C33C-D723-CEA4-54C0-687BC6A989EE</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numofspec_sh" id="3515DB48-1857-CF9E-3B47-085F33FECBEA">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>74DCEBC9-DAA8-29F6-5E8F-0C0597DD929E</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Play_id_pl" id="39266AA8-79A2-75E3-4950-A895A66B7495">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>942B1CEF-E259-E172-EE11-BEFD2FC1EA5B</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3322DEBF-3A72-280B-3218-9A545397FE0F" referredColumn="7EB58A02-30DD-5D8B-36E2-8406C8F72508"/>
+</associations>
+</Column>
+<Column name="Scene_id_sc" id="FB79F9BB-15D2-C52F-924F-AC4FEF9A38A8">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>1BE9CC60-0569-57D5-F1B1-A81E56468682</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1518D9C-C78A-8724-6196-045DE8C01FBC" referredColumn="F77F6D12-E26F-4B23-239D-13E755CC70BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4C7DABC-062F-790E-9C82-B1293FCC14C5" name="Showing_PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>E2CE6C97-050C-AA6C-F15B-0D1CD4FBFAEF</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F7B1F05-9C19-1E71-7368-DEF35075614C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B0DC9AB-1AC0-FF2B-EDCB-4895E5D1A75C" name="Showing_Play_FK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>53D0A686-9E7F-2C79-552D-161E95928818</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39266AA8-79A2-75E3-4950-A895A66B7495"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9A23984-88B7-5030-1426-039A7B3F944A" name="Showing_Scene_FK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>AE07DBED-C9D5-3E00-2D50-7F4D67C0B76C</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB79F9BB-15D2-C52F-924F-AC4FEF9A38A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BACEF01B-D4D1-9381-6BD6-A7BC696EA857" name="Department">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:56:09 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_dpt" id="29120945-56D9-CF6A-EC72-38187551DA37">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:56:15 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_dp" id="AF38550B-92A1-4339-638A-FEB266939127">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:56:15 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_th" id="444EFA17-74CA-9613-09AA-FA917FFF4A5E">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:56:50 UTC</createdTime>
+<generatorID>903A9646-B9D8-68C5-1B87-9E9E2BF5AF84</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referedAttribute>4AD7254C-5BB3-8F5A-EDAB-89B97C2A6536</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1DE88A75-737D-F07B-5DD5-12163C5C45E0" name="Sector PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:56:35 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>29120945-56D9-CF6A-EC72-38187551DA37</newElementsIDs>
+<usedAttributes>
+<attributeRef>29120945-56D9-CF6A-EC72-38187551DA37</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

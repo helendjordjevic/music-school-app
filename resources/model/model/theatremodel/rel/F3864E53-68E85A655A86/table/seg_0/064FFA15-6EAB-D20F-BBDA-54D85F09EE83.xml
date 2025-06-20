@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="064FFA15-6EAB-D20F-BBDA-54D85F09EE83" name="TheatreManager">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>28CE841A-E977-89E1-07D0-89E0AA81290C</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_em" id="5C22EC9B-159C-4761-67F5-32691B0B2331">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>B3CEE31D-9996-E936-ACBA-F52F9C4A5599</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69B7812A-0309-A39E-E3FF-87A55245E35B" referredColumn="D6A57C8C-35DF-56F0-7E45-37C5A5A994F3"/>
+</associations>
+</Column>
+<Column name="profqual_tm" id="3E95F50E-C07F-BA2E-00EB-389BDA54500F">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>C40DB92F-BCF0-62BA-AB8B-A507496C205A</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47A10993-C2FD-91B9-4FA0-D0EFB4167DF0" name="TheatreManager_PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>4560AFEA-D4AA-B1C5-D292-3E649D002971</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C22EC9B-159C-4761-67F5-32691B0B2331"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BD737BF-F2AF-983B-3CF1-144ED2316D30" name="TheatreManager_Employee_FK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-11-26 08:11:52 UTC</createdTime>
+<generatorID>D032F22B-C47C-6693-3BF4-02384FF04EA1</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C22EC9B-159C-4761-67F5-32691B0B2331"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

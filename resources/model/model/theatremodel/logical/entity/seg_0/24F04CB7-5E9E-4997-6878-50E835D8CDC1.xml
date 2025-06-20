@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="24F04CB7-5E9E-4997-6878-50E835D8CDC1" name="Play">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:32:14 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pl" id="965A2276-381F-5028-3D48-9C71AB33210B">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:32:22 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_pl" id="EBF52149-900A-A0C4-5738-FE14EEB42B1C">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:32:22 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="duration_pl" id="223FB8D4-C914-E8E2-8D4F-E43166B35366">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:32:22 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="year_pl" id="F58539E3-85F0-569A-AC63-0B70A5CAD7A5">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:32:23 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D0E30D65-3E24-D78A-4629-2AC88A4E5F9D" name="Play PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:32:38 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>965A2276-381F-5028-3D48-9C71AB33210B</newElementsIDs>
+<usedAttributes>
+<attributeRef>965A2276-381F-5028-3D48-9C71AB33210B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

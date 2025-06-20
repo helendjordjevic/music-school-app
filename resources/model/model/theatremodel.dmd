@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="theatremodel" id="93FAB8B1-D65D-43AE-4ADE-1398F88C7658" version="3.5">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:28:33 UTC</createdTime>
+<ownerDesignName>pozoriste</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>93FAB8B1-D65D-43AE-4ADE-1398F88C7658</designId>
+</OSDM_Design>

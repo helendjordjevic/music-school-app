@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="124F6386-3379-BF5B-E0A3-0E438C6A010C">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:28:34 UTC</createdTime>
+<ownerDesignName>pozoriste</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

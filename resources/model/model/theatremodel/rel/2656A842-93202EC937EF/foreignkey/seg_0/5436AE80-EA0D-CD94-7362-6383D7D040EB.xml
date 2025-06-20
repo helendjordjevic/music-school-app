@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5436AE80-EA0D-CD94-7362-6383D7D040EB" containerWithKeyObject="03C51498-03C9-065F-F9E1-C2D01B96413D" localFKIndex="18E90524-9A83-8ED6-9D2F-BAE85B3B2D01" name="Showing_Play_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-25 22:30:26 UTC</createdTime>
+<generatorID>53D0A686-9E7F-2C79-552D-161E95928818</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referredTableLongName>Play</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB5717B1-81B2-DD03-37C7-FDA23B554811</referredTableID>
+<keyObject>DACE6936-2075-027D-6D9F-98151237AD90</keyObject>
+<referredKeyID>DACE6936-2075-027D-6D9F-98151237AD90</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idplay</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

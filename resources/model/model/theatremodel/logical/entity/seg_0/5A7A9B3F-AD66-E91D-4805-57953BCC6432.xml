@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A7A9B3F-AD66-E91D-4805-57953BCC6432" name="Place">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:52:47 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pl" id="F0A7EFDD-DED9-E97F-1A34-5F1944EA30B2">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:52:52 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_pl" id="FB0422C8-AF8E-A94C-D153-E9E55B17E268">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:52:52 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cn" id="0F8EADEC-A42E-CA18-5387-F9A71986B478">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:54:07 UTC</createdTime>
+<generatorID>BD6B7D23-DC13-258B-FABC-5B608A05B1B1</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referedAttribute>934754F0-052F-EFAA-B1E7-3A8C76EF2DBD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39D853F1-BED9-2185-D0A6-BBB695C6FEF5" name="Place PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:53:15 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>F0A7EFDD-DED9-E97F-1A34-5F1944EA30B2</newElementsIDs>
+<usedAttributes>
+<attributeRef>F0A7EFDD-DED9-E97F-1A34-5F1944EA30B2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

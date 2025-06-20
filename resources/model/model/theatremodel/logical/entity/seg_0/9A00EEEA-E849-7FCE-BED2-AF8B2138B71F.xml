@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A00EEEA-E849-7FCE-BED2-AF8B2138B71F" name="Country">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:53:27 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_cn" id="934754F0-052F-EFAA-B1E7-3A8C76EF2DBD">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:53:27 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_cn" id="23C358C8-EC15-529C-DC7C-E56C6D4D98DC">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:53:27 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="85410310-2626-2C06-F9D9-1CC1B617C477" name="Country PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:53:27 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>934754F0-052F-EFAA-B1E7-3A8C76EF2DBD</newElementsIDs>
+<usedAttributes>
+<attributeRef>934754F0-052F-EFAA-B1E7-3A8C76EF2DBD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

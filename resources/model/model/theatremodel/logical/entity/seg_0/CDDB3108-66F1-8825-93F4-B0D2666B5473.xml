@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CDDB3108-66F1-8825-93F4-B0D2666B5473" name="Part">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:36:54 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pt" id="46A6E0D5-7144-55A4-B855-C4F6242E9277">
+<createdBy>Marija Kukic</createdBy>
+<createdTime>2019-12-04 12:25:52 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_pt" id="0EC9ABF5-A0DC-C68B-32C2-567DE05D940E">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:37:04 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 CHAR</dataTypeSize>
+<ownDataTypeParameters>64 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gender_pt" id="40643E6A-33B3-5B77-C30B-617C2EE0DBC1">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:37:04 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type_pt" id="294B8862-9E28-1C5A-3D28-DF98AD9C6CD7">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:37:04 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pl" id="764F9225-7F91-64E0-1E7B-872F1B41AAD5">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:39:17 UTC</createdTime>
+<generatorID>1875F70C-4837-E98E-AC9F-649272627474</generatorID>
+<ownerDesignName>theatremodel</ownerDesignName>
+<referedAttribute>965A2276-381F-5028-3D48-9C71AB33210B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="177CC7BF-2FF6-7C7D-927E-27F097F6464D" name="Part PK">
+<createdBy>dimit</createdBy>
+<createdTime>2019-11-05 21:37:26 UTC</createdTime>
+<ownerDesignName>theatremodel</ownerDesignName>
+<pk>true</pk>
+<newElementsIDs>46A6E0D5-7144-55A4-B855-C4F6242E9277</newElementsIDs>
+<usedAttributes>
+<attributeRef>46A6E0D5-7144-55A4-B855-C4F6242E9277</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
