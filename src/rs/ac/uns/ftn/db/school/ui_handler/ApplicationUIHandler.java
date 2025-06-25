@@ -1,6 +1,7 @@
 package rs.ac.uns.ftn.db.school.ui_handler;
 
 import java.sql.SQLException;
+import java.util.List;
 
 import rs.ac.uns.ftn.db.school.model.Application;
 import rs.ac.uns.ftn.db.school.service.ApplicationService;
@@ -15,9 +16,9 @@ public class ApplicationUIHandler {
 			System.out.println("\nOdaberite opciju za rad nad prijavama:");
 			System.out.println("1 - Prikaz svih");
 			System.out.println("2 - Prikaz po identifikatoru");
-			System.out.println("3 - Unos jedne prijave");
-			System.out.println("4 - Unos vise prijava");
-			System.out.println("5 - Izmena po identifikatoru");
+			System.out.println("3 - Prikaz prijava po kursevima");
+			System.out.println("4 - Prikaz broja prijava po studentu");
+			System.out.println("5 - Statistika kurseva");
 			System.out.println("6 - Brisanje po identifikatoru");
 			System.out.println("X - Izlazak iz rukovanja prijavama");
 
@@ -28,16 +29,15 @@ public class ApplicationUIHandler {
 				showAll();
 				break;
 			case "2":
-				showById();
+				showById(); // ne radi
 				break;
 			case "3":
-				//TODO: implementirati
+				showCourseApplications();
 				break;
 			case "4":
-				//TODO: implementirati
+				showApplicationCountPerStudent();
 				break;
 			case "5":
-				//TODO: implementirati
 				break;
 			case "6":
 				//TODO: implementirati
@@ -70,5 +70,29 @@ public class ApplicationUIHandler {
 			e.printStackTrace();
 		}
 	}
+
+	private void showCourseApplications() {
+		System.out.println("\n=== Prijave studenata na kurseve ===");
+		try {
+			applicationService.getAllCourseApplications()
+					.forEach(System.out::println);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void showApplicationCountPerStudent() {
+		System.out.println("\n=== Broj prijava po studentu ===");
+		try {
+			applicationService.getApplicationCountPerStudent()
+					.forEach(System.out::println);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+
+
+
 
 }

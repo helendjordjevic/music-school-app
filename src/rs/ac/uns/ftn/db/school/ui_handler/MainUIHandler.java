@@ -1,6 +1,10 @@
 package rs.ac.uns.ftn.db.school.ui_handler;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Scanner;
+
+import static rs.ac.uns.ftn.db.school.connection.ConnectionUtil_HikariCP.getConnection;
 
 public class MainUIHandler {
 	
@@ -11,7 +15,8 @@ public class MainUIHandler {
 	private final InstrumentUIHandler instrumentUIHandler = new InstrumentUIHandler();
 	private final SessionUIHandler sessionUIHandler = new SessionUIHandler();
 	private final UserUIHandler userUIHandler = new UserUIHandler();
-
+	private final ApplicationUIHandler applicationUIHandler = new ApplicationUIHandler();
+    private final ProfessorCourseUIHandler professorCourseUIHandler = new ProfessorCourseUIHandler();
 	
 	public void handleMainMenu() {
 
@@ -23,7 +28,10 @@ public class MainUIHandler {
 			System.out.println("3 - Rukovanje instrumentima");
 			System.out.println("4 - Rukovanje terminima");
 			System.out.println("5 - Rukovanje korisnicima");
-	
+			System.out.println("6 - Rukovanje prijavama");
+			System.out.println("7 - Dodavanje profesora i kursa");
+
+
 			System.out.println("X - Izlazak iz programa");
 
 			answer = sc.nextLine();
@@ -47,6 +55,18 @@ public class MainUIHandler {
 				
 			case "5":
 				userUIHandler.handleUserMenu();
+				break;
+
+			case "6":
+				applicationUIHandler.handleApplicationMenu();
+				break;
+
+			case "7":
+				try (Connection conn = getConnection()) {
+					professorCourseUIHandler.handleProfessorCourseMenu(conn);
+				} catch (SQLException e) {
+					System.err.println("Greška sa konekcijom: " + e.getMessage());
+				}
 				break;
 				
 			}

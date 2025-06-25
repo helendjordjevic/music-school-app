@@ -108,21 +108,50 @@ public class CourseDAOImpl implements CourseDAO {
 		return 0;
 	}
 
-	private boolean saveTransactional(Connection connection, Course course) throws SQLException {
+	public boolean saveTransactional(Connection connection, Course course) throws SQLException {
 
-		String insertCommand = "insert into KURS (NAZ_KU, TRAJANJE_KU, KORISNIK_ID_PROF) values (?,?,?)";
-		String updateCommand = "update KURS set NAZ_KU=?, TRAJANJE_KU=?, KORISNIK_ID_PROF=?";
+		boolean exists = existsByIdTransactional(connection, course.getId());
 
-		try (PreparedStatement preparedStatement = connection.prepareStatement(
-				existsByIdTransactional(connection, course.getId()) ? updateCommand : insertCommand)) {
+		// Ako novi kurs, postavi ID iz sekvence
+		if (!exists) {
+			int nextCourseId = getNextCourseId(connection);
+			course.setId(nextCourseId);
+		}
+
+		String insertCommand = "insert into KURS (ID_KU, NAZ_KU, TRAJANJE_KU, KORISNIK_ID_PROF) values (?, ?, ?, ?)";
+		String updateCommand = "update KURS set NAZ_KU=?, TRAJANJE_KU=?, KORISNIK_ID_PROF=? WHERE ID_KU=?";
+
+		try (PreparedStatement preparedStatement = connection.prepareStatement(exists ? updateCommand : insertCommand)) {
 			int i = 1;
-			preparedStatement.setString(i++, course.getName());
-			preparedStatement.setInt(i++, course.getDuration());
-			preparedStatement.setInt(i++, course.getProfessorId());
-			int rowsAffected =  preparedStatement.executeUpdate();
+			if (!exists) {
+				preparedStatement.setInt(i++, course.getId());  // ID_KU
+			}
+			preparedStatement.setString(i++, course.getName());  // NAZ_KU
+			preparedStatement.setInt(i++, course.getDuration()); // TRAJANJE_KU
+			preparedStatement.setInt(i++, course.getProfessorId()); // KORISNIK_ID_PROF
+
+			if (exists) {
+				preparedStatement.setInt(i++, course.getId()); // WHERE ID_KU=?
+			}
+
+			int rowsAffected = preparedStatement.executeUpdate();
 			return rowsAffected == 1;
 		}
+
 	}
+
+	public int getNextCourseId(Connection connection) throws SQLException {
+		String sql = "SELECT kurs_seq.NEXTVAL FROM dual";
+		try (PreparedStatement ps = connection.prepareStatement(sql);
+			 ResultSet rs = ps.executeQuery()) {
+			if (rs.next()) {
+				return rs.getInt(1);
+			} else {
+				throw new SQLException("Nisam mogao da dobijem sledeći ID iz sekvence kurs_seq.");
+			}
+		}
+	}
+
 
 
 }
