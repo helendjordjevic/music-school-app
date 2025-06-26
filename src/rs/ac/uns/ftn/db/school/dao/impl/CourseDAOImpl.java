@@ -9,6 +9,9 @@ import java.util.List;
 
 import rs.ac.uns.ftn.db.school.connection.ConnectionUtil_HikariCP;
 import rs.ac.uns.ftn.db.school.dao.CourseDAO;
+import rs.ac.uns.ftn.db.school.dto.CourseApplicationCountDTO;
+import rs.ac.uns.ftn.db.school.dto.CourseInstrumentDTO;
+import rs.ac.uns.ftn.db.school.dto.CourseWithProfessorDTO;
 import rs.ac.uns.ftn.db.school.model.Course;
 
 public class CourseDAOImpl implements CourseDAO {
@@ -152,6 +155,120 @@ public class CourseDAOImpl implements CourseDAO {
 		}
 	}
 
+	@Override
+	public List<CourseWithProfessorDTO> getCoursesWithProfessors() throws SQLException {
+		List<CourseWithProfessorDTO> result = new ArrayList<>();
 
+		String query = """
+            SELECT 
+                k.ID_KU AS kurs_id, 
+                k.NAZ_KU AS kurs_naziv, 
+                kor.IME_KOR, 
+                kor.PRZ_KOR, 
+                kor.ID_PROF
+            FROM KURS k
+            JOIN KORISNIK kor ON k.KORISNIK_ID_PROF = kor.ID_PROF
+            WHERE kor.TIP_KOR = 'Profesor'
+        """;
+
+		try (Connection conn = ConnectionUtil_HikariCP.getConnection();
+			 PreparedStatement stmt = conn.prepareStatement(query);
+			 ResultSet rs = stmt.executeQuery()) {
+			while (rs.next()) {
+				result.add(new CourseWithProfessorDTO(
+						rs.getInt("kurs_id"),
+						rs.getString("kurs_naziv"),
+						rs.getString("Ime_Kor"),
+						rs.getString("Prz_Kor"),
+						rs.getInt("Id_Prof")
+				));
+			}
+		}
+		return result;
+	}
+
+	@Override
+	public List<CourseApplicationCountDTO> getCourseApplicationCounts() throws SQLException {
+		List<CourseApplicationCountDTO> result = new ArrayList<>();
+
+		String query = """
+            SELECT 
+                k.ID_KU AS kurs_id,
+                k.NAZ_KU AS kurs_naziv,
+                COUNT(p.KORISNIK_ID_ST) AS broj_prijava
+            FROM KURS k
+            LEFT JOIN PRIJAVA p ON k.ID_KU = p.KURS_ID_KU
+            GROUP BY k.ID_KU, k.NAZ_KU
+            ORDER BY broj_prijava DESC
+        """;
+
+		try (Connection conn = ConnectionUtil_HikariCP.getConnection();
+			 PreparedStatement stmt = conn.prepareStatement(query);
+			 ResultSet rs = stmt.executeQuery()) {
+
+			while (rs.next()) {
+				result.add(new CourseApplicationCountDTO(
+						rs.getInt("kurs_id"),
+						rs.getString("kurs_naziv"),
+						rs.getInt("broj_prijava")
+				));
+			}
+		}
+
+		return result;
+	}
+	@Override
+	public List<CourseInstrumentDTO> findMostUsedInstrumentPerCourse() throws SQLException {
+		List<CourseInstrumentDTO> result = new ArrayList<>();
+
+
+		String query = """
+	WITH InstrumentCount AS (
+		SELECT 
+			p.KURS_ID_KU AS kurs_id,
+			p.INSTRUMENT_ID_INS AS instrument_id,
+			COUNT(*) AS broj_prijava
+		FROM PRIJAVA p
+		GROUP BY p.KURS_ID_KU, p.INSTRUMENT_ID_INS
+	),
+	MaxInstrument AS (
+		SELECT
+			kurs_id,
+			MAX(broj_prijava) AS max_prijava
+		FROM InstrumentCount
+		GROUP BY kurs_id
+	)
+	SELECT
+		ic.kurs_id,
+		k.NAZ_KU AS naziv_kursa,
+		ic.instrument_id,
+		i.NAZ_INS AS naziv_instrumenta,
+		ic.broj_prijava
+	FROM InstrumentCount ic
+	JOIN MaxInstrument mi ON ic.kurs_id = mi.kurs_id AND ic.broj_prijava = mi.max_prijava
+	JOIN Instrument i ON ic.instrument_id = i.ID_INS
+	JOIN Kurs k ON ic.kurs_id = k.ID_KU
+	ORDER BY ic.kurs_id
+	""";
+
+
+		try (Connection conn = ConnectionUtil_HikariCP.getConnection();
+			 PreparedStatement ps = conn.prepareStatement(query);
+			 ResultSet rs = ps.executeQuery()) {
+
+			while (rs.next()) {
+				CourseInstrumentDTO dto = new CourseInstrumentDTO(
+						rs.getInt("kurs_id"),
+						rs.getString("naziv_kursa"),
+						rs.getInt("instrument_id"),
+						rs.getString("naziv_instrumenta"),
+						rs.getInt("broj_prijava")
+				);
+				result.add(dto);
+			}
+		}
+
+		return result;
+	}
 
 }
