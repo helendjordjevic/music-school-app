@@ -85,6 +85,8 @@ public class ProfessorCourseUIHandler {
                 System.out.println("Profesor i kurs uspešno dodati.");
                 System.out.println("Generisani ID profesora: " + professor.getId());
                 System.out.println("Generisani ID profesora za kurs (professorId): " + professor.getProfessorId());
+                System.out.println("Generisani ID kursa: " + course.getId());
+                System.out.println("Naziv kursa: " + course.getName());
             } else {
                 System.out.println("Došlo je do greške prilikom dodavanja.");
             }
@@ -95,6 +97,5 @@ public class ProfessorCourseUIHandler {
             System.err.println("Greška pri radu sa bazom: " + e.getMessage());
         }
     }
-
 
 }
