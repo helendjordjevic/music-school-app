@@ -123,7 +123,6 @@ public class ApplicationDAOImpl implements ApplicationDAO{
 	private boolean saveTransactional(Connection connection, Application application) throws SQLException {
 
 		String insertCommand = "insert into PRIJAVA (KURS_ID_KU, INSTRUMENT_ID_INS, KORISNIK_ID_ST) values (?,?,?)";
-		//String updateCommand = "update PRIJAVA set KURS_ID_KU=?, INSTRUMENT_ID_INS=?, KORISNIK_ID_ST=?";
 		if(existsByIdTransactional(connection, application.getStudentId(),  application.getCourseId())) {
 			return false;
 			

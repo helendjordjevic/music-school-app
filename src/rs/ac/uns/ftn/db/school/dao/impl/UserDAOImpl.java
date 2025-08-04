@@ -135,7 +135,7 @@ public class UserDAOImpl implements UserDAO {
 		}
 
 		// Ako je novi korisnik (profesor ili student), id iz sekvence ide preko triggera za Id_Kor
-		// Ali profesor dobija dodatno Id_Prof iz sekvence - zato mi sami dobijamo ID za profesora
+		// Ali profesor dobija dodatno Id_Prof iz sekvence
 		if (!exists && user.getUserType() == UserType.PROFESSOR) {
 			int nextProfId = getNextProfessorId(connection);
 			user.setProfessorId(nextProfId);
@@ -204,8 +204,6 @@ public class UserDAOImpl implements UserDAO {
 			int rowsAffected = ps.executeUpdate();
 
 			if (!exists && rowsAffected == 1) {
-				// Pošto Oracle ne podržava getGeneratedKeys za sekvence i trigger,
-				// dohvatimo ID korisnika po emailu (pretpostavljamo da je jedinstven)
 				String query = "SELECT Id_Kor FROM Korisnik WHERE Email_Kor = ?";
 				try (PreparedStatement psQuery = connection.prepareStatement(query)) {
 					psQuery.setString(1, user.getEmail());

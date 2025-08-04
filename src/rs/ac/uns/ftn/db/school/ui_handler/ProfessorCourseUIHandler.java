@@ -35,7 +35,7 @@ public class ProfessorCourseUIHandler {
 
     private void insertProfessorAndCourse(Connection conn) {
         try {
-            // Ne tražimo više ID profesora i kursa, jer to generiše baza
+            
 
             System.out.println("Ime profesora:");
             String ime = MainUIHandler.sc.nextLine();
@@ -53,13 +53,13 @@ public class ProfessorCourseUIHandler {
             String strucnost = MainUIHandler.sc.nextLine();
 
             User professor = new User();
-            professor.setId(0); // ili null ako koristiš Integer objekat
+            professor.setId(0); 
             professor.setName(ime);
             professor.setLastname(prezime);
             professor.setEmail(email);
             professor.setUserType(UserType.PROFESSOR);
             professor.setSchoolId(schoolId);
-            professor.setProfessorId(0); // biće postavljeno u servisu/bazi
+            professor.setProfessorId(0); 
             professor.setExpertise(strucnost);
 
             professor.setStudentId(0);
@@ -73,10 +73,10 @@ public class ProfessorCourseUIHandler {
             int trajanje = Integer.parseInt(MainUIHandler.sc.nextLine());
 
             Course course = new Course();
-            course.setId(0);  // generisaće se u bazi ako imaš trigger za KURS, ako nema - možeš ubaciti kao opciju kasnije
+            course.setId(0);  
             course.setName(naziv);
             course.setDuration(trajanje);
-            // Postaviš profId tek posle što se profesor sačuva (vidi servis)
+            
             course.setProfessorId(0);
 
             boolean uspeh = service.insertProfessorAndCourse(conn, professor, course);
